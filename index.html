@@ -1,43 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  
+  <link href="styles.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>NFT preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  Equilibrium #3429
+  <div class="card">
+    
+    <div class="img-container">
+      <img class="nft-image" src="images/image-equilibrium.jpg" alt="nft image">
+    </div>
 
-  Our Equilibrium collection promotes balance and calm.
+    <a href="#" class="title">Equilibrium #3429</a>
+    <p class="description">Our Equilibrium collection promotes balance and calm.</p>
 
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
+    <div class="price-time-container">
+      <div class="price">
+        <img src="./images/icon-ethereum.svg" alt="eth icon" class="eth-icon">
+        <span class="eth-price">0.041 ETH</span>
+      </div>
+      <div class="time">
+        <img src="./images/icon-clock.svg" alt="clock" class="clock-icon">
+        <span class="time-left">3 days left</span>
+      </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="created-by-container">
+      <img src="./images/image-avatar.png" alt="avatar" class="avatar">
+      <span class="created-by-label">Creation of</span>
+      <a href="#" class="creator-name">Jules Wyvern</a>
+    </div>
+
+  </div>
 
 </body>
 </html>
