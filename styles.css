@@ -20,13 +20,40 @@ body {
 }
 .img-container {
     height: 302px;
-    width: 100%;
+    width: 302px;
     margin-bottom: 24px;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .nft-image {
-    max-width: 100%;
-    max-height: auto;
-    border-radius: 6px;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    position:absolute;
+}
+.overlay {
+    background: #00FFF8;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: 0.2s linear;
+}
+.eye-icon {
+    position: absolute;
+    display: none;
+    transition: 0.2s linear;
+}
+.img-container:hover .overlay{
+    opacity: 0.5;
+}
+.img-container:hover .eye-icon{
+    display: inline;
 }
 .title {
     font-size: 22px;
@@ -114,4 +141,22 @@ body {
 }
 .creator-name:hover {
     color: #00FFF8;
+}
+
+@media (max-width: 375px) {
+    .card {
+        height: 543px;
+        width: 326px; 
+    }
+    .img-container {
+        height: 278px;
+        width: 278px; 
+    }
+    .description {
+        margin-top: 12px;
+        margin-bottom: 16px;
+    }
+    .price-time-container {
+        margin-bottom: 16px;
+    }
 }
