@@ -25,13 +25,15 @@ Users should be able to:
 
 As an additional challenge, I added a light mode design with a toggle to switch between dark and light mode themes. 
 
-### Screenshot
+### Screenshots
 
-Dark Mode:
-![Dark mode solution](./solution/dark-mode-solution.jpg)
+**Dark Mode:**
 
-Light Mode:
-![Light mode solution](./solution/light-mode-solution.jpg)
+<img src="./solution/dark-mode-solution.jpg" width=50% height=50%>
+
+**Light Mode:**
+
+<img src="./solution/light-mode-solution.jpg" width=50% height=50%>
 
 ### Links
 
