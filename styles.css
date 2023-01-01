@@ -1,22 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
 
-body {
+body {    
     font-family: 'Outfit', sans-serif;
-    background: hsl(217, 54%, 11%);
+    background: var(--page-bg);
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
+    /* dark color palette (default) */
+    --page-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --primary-text: white;
+    --secondary-text: hsl(215, 51%, 70%);
+    --accent: hsl(178, 100%, 50%);
+    --line: hsl(215, 32%, 27%);
+    --shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+    --theme-toggle-bg: hsl(216, 50%, 16%);
+    --theme-icon: white;
+}
+body.light {
+    /* light color palette */
+    --page-bg: hsl(215, 37%, 85%);
+    --card-bg: white;
+    --primary-text: hsl(217, 54%, 11%);
+    --secondary-text: hsl(215, 32%, 27%);
+    --accent: hsl(178, 100%, 34%);
+    --line: hsl(215, 51%, 70%);
+    --shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+    --theme-toggle-bg: white;
+    --theme-icon: hsl(216, 50%, 16%);
+}
+#theme-toggle {
+    background: var(--theme-toggle-bg);
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: grid;
+    place-items: center;
+    z-index: 1;
+}
+#theme-toggle:hover {
+    opacity: .8;
+}
+.theme-icon {
+    color: var(--theme-icon);
+}
+.icon-hide {
+    display: none;
+}
 .card {
-    background: hsl(216, 50%, 16%);
+    background: var(--card-bg);
     height: 596px;
     width: 350px;
     box-sizing: border-box;
     padding: 24px;
     border-radius: 15px;
-    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+    box-shadow: var(--shadow);
 }
 .img-container {
     height: 302px;
@@ -59,18 +103,18 @@ body {
     font-size: 22px;
     font-weight: 600;
     line-height: 28px;
-    color: white;
+    color: var(--primary-text);
     text-decoration-line: none;
     display: block;
     width: max-content;
 }
 .title:hover {
-    color: #00FFF8;
+    color: var(--accent);
 }
 .description {
     font-size: 18px;
     font-weight: 300;
-    color: hsl(215, 51%, 70%);
+    color: var(--secondary-text);
     margin-top: 16px;
     margin-bottom: 24px;
 }
@@ -88,11 +132,12 @@ body {
 .eth-icon {
     height: 18px;
     width: 11px;
+    color: var(--accent);
 }
 .eth-price {
     font-size: 16px;
     font-weight: 600;
-    color: hsl(178, 100%, 50%);
+    color: var(--accent);
     margin-left: 6px;
 }
 .time {
@@ -101,18 +146,19 @@ body {
     align-items: center;
 }
 .clock-icon {
-    height: 13.33px;
-    width: 13.33px;
+    height: 17px;
+    width: 17px;
+    color: var(--secondary-text);
 }
 .time-left {
     font-size: 16px;
     font-weight: 400;
-    color: hsl(215, 51%, 70%);
+    color: var(--secondary-text);
     margin-left: 7.7px;
 }
 .line {
     height: 0px;
-    border-top: 1px solid hsl(215, 32%, 27%);
+    border-top: 1px solid var(--line);
     margin-bottom: 16px;
 }
 .created-by-container {
@@ -128,22 +174,26 @@ body {
 }
 .created-by-label {
     margin-left: 16px;
-    color: hsl(215, 51%, 70%);
+    color: var(--secondary-text);
     font-size: 16px;
     font-weight: 400;
 }
 .creator-name {
     margin-left: 5px;
-    color: white;
+    color: var(--primary-text);
     font-size: 16px;
     font-weight: 400;
     text-decoration-line: none;
 }
 .creator-name:hover {
-    color: #00FFF8;
+    color: var(--accent);
 }
 
 @media (max-width: 375px) {
+    #theme-toggle {
+        top: 10px;
+        right: 10px;
+    }
     .card {
         height: 543px;
         width: 326px; 
