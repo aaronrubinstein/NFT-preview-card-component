@@ -37,8 +37,8 @@ As an additional challenge, I added a light mode design with a toggle to switch 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/aaronrubinstein/NFT-preview-card-component
+- Live Site URL: https://aaronrubinstein.github.io/NFT-preview-card-component/
 
 ## My process
 
