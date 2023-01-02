@@ -12,8 +12,6 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
   - [Built with](#built-with)
   - [Useful resources](#useful-resources)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
